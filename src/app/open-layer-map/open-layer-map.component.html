@@ -1,0 +1,118 @@
+<div class="row no-gutters">
+  <div class="col-md-6">
+    <!-- <div class="row">
+      <div id="hotel_map"></div>
+    </div> -->
+    <div class="img">
+      <img src="../../assets/map1.jpg" alt="img" />
+    </div>
+    <span class="overlay text-justify">
+      <h1 class="text-center text-primary">Roofmaps</h1>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quasi expedita
+      eveniet aperiam, quia magni explicabo dolor quaerat officia incidunt
+      minima voluptatem cumque est unde repudiandae ipsam error quod recusandae
+      exercitationem.</span
+    >
+  </div>
+  <div class="col-md-6 m-auto p-5">
+    <div id="signup">
+      <h3>Welcome to <span style="color: blue;">Roofmaps</span></h3>
+      <p>Signin in to your account.</p>
+      <form [formGroup]="signin" (ngSubmit)="signinS()">
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            formControlName="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+            formControlName="pass"
+            required
+          />
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <div class="d-flex justify-content-between">
+            <label class="form-check-label" for="exampleCheck1"
+              >Keep me logged in</label
+            >
+            <a href="# ">Forgot Password?</a>
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          class="btn btn-primary mt-3"
+          [disabled]="!signin.valid"
+        >
+          Sign in
+        </button>
+        <p class="text-center mt-3">
+          Don't have an account?
+          <span class="text-primary"
+            ><a href="#" (click)="singnup('signup')">Sign up</a></span
+          >
+        </p>
+      </form>
+    </div>
+    <div id="signin">
+      <h3>Welcome to <span style="color: blue;">Roofmaps</span></h3>
+      <p>Getting Started</p>
+      <form [formGroup]="signup" (ngSubmit)="signupS()">
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+            formControlName="email"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+            formControlName="pass"
+            required
+          />
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <div class="d-flex justify-content-between">
+            <label class="form-check-label" for="exampleCheck1"
+              >Keep me logged in</label
+            >
+            <a href="# ">Forgot Password?</a>
+          </div>
+        </div>
+        <button
+          type="submit"
+          class="btn btn-primary mt-3"
+          [disabled]="!signup.valid"
+        >
+          Sign up
+        </button>
+        <p class="text-center mt-3">
+          Don't have an account?
+          <span class="text-primary"
+            ><a href="#" (click)="singnin('signin')">Sign in</a></span
+          >
+        </p>
+      </form>
+    </div>
+  </div>
+</div>

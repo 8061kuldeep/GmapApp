@@ -1,11 +1,21 @@
-import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { NgModule } from "@angular/core";
+import { Routes, RouterModule } from "@angular/router";
+import { DashbordComponent } from "./dashbord/dashbord.component";
+import { OpenLayerMapComponent } from "./open-layer-map/open-layer-map.component";
 
-
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: "dashbord",
+    component: DashbordComponent,
+  },
+  {
+    path: "",
+    component: OpenLayerMapComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

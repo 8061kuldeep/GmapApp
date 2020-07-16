@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import "~leaflet/dist/leaflet.css";
+img {
+  height: 630px;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}

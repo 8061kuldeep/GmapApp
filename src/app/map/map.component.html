@@ -1,0 +1,88 @@
+<div class="row">
+  <div class="col-md-6">
+    <div class="map-frame" style="height: 645px;">
+      <div id="map" (Click)="click($event)"></div>
+    </div>
+  </div>
+  <div class="col-md-6 m-auto p-5">
+    <div id="signup">
+      <h3>Welcome to <span style="color: blue;">Roofmaps</span></h3>
+      <p>Signin in to your account.</p>
+      <form>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <div class="d-flex justify-content-between">
+            <label class="form-check-label" for="exampleCheck1"
+              >Keep me logged in</label
+            >
+            <a href="# ">Forgot Password?</a>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary mt-3">Sign in</button>
+        <p class="text-center mt-3">
+          Don't have an account?
+          <span class="text-primary"
+            ><a href="#" (click)="singnup('signup')">Sign up</a></span
+          >
+        </p>
+      </form>
+    </div>
+    <div id="signin">
+      <h3>Welcome to <span style="color: blue;">Roofmaps</span></h3>
+      <p>Getting Started</p>
+      <form>
+        <div class="form-group">
+          <input
+            type="email"
+            class="form-control"
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder="Enter email"
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder="Password"
+          />
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+          <div class="d-flex justify-content-between">
+            <label class="form-check-label" for="exampleCheck1"
+              >Keep me logged in</label
+            >
+            <a href="# ">Forgot Password?</a>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Sign up</button>
+        <p class="text-center mt-3">
+          Don't have an account?
+          <span class="text-primary"
+            ><a href="#" (click)="singnin('signin')">Sign in</a></span
+          >
+        </p>
+      </form>
+    </div>
+  </div>
+</div>
