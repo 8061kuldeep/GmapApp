@@ -48,6 +48,9 @@ export class OpenLayerMapComponent implements OnInit {
 
     localStorage.setItem("fdata", JSON.stringify(this.formData));
     console.log(this.signup.value);
+    this.signup.reset();
+    this.singnin("signin");
+    alert("Now please signin from below!");
   }
   signinS() {
     this.test = 0;
